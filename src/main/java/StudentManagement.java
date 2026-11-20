@@ -18,12 +18,22 @@ public class StudentManagement {
         System.out.print("Enter Department: ");
         String department = sc.nextLine();
 
-        System.out.println("\n--- STUDENT DETAILS ---");
-        System.out.println("Name       : " + name);
-        System.out.println("Register No: " + regNo);
-        System.out.println("Department : " + department);
+        try {
 
-        System.out.println("\nStudent details added successfully!");
+            Student student = new Student(name, regNo, department);
+
+            System.out.println("\n--- STUDENT DETAILS ---");
+            System.out.println("Name       : " + student.getName());
+            System.out.println("Register No: " + student.getRegisterNumber());
+            System.out.println("Department : " + student.getDepartment());
+
+            System.out.println("\nStudent added successfully!");
+
+        } catch (IllegalArgumentException e) {
+
+            System.out.println("Error: " + e.getMessage());
+
+        }
 
         sc.close();
     }
