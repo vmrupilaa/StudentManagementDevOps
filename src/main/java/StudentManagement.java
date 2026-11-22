@@ -6,7 +6,7 @@ public class StudentManagement {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-
+        System.out.println("Welcome to Student Management System!");
         System.out.println("STUDENT MANAGEMENT SYSTEM");
 
         System.out.print("Enter Student Name: ");
