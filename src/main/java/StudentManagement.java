@@ -1,4 +1,4 @@
-
+// Testing automatic Jenkins build trigger
 import java.util.Scanner;
 
 public class StudentManagement {
